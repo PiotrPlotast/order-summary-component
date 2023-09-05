@@ -12,21 +12,23 @@
 
 <body>
   <main>
-    <img src="./images/illustration-hero.svg" alt="">
-    <h1>Order Summary</h1>
+    <div class="card">
+      <img src="./images/illustration-hero.svg" alt="">
+      <h1 class="card__heading">Order Summary</h1>
 
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!</p>
+      <p class="card__text">You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
 
-    <div class="chosen-plan">
-      <img src="./images/icon-music.svg" alt="">
-      <h2>Annual Plan</h2>
-      <p>$59.99/year</p>
+      <div class="chosen-plan">
+        <img src="./images/icon-music.svg" alt="">
+        <h2 class="chosen-plan__heading">Annual Plan</h2>
+        <p class="chosen-plan__text">$59.99/year</p>
 
-      <button>Change</button>
+        <button class="chosen-plan__change-plan-btn">Change</button>
+      </div>
+      <button class="card__payment-btn">Proceed to Payment</button>
+      <button class="card__cancel-btn">Cancel Order</button>
     </div>
-    <button>Proceed to Payment</button>
-    <button>Cancel Order</button>
   </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
