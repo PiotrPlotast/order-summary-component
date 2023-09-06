@@ -109,3 +109,9 @@ body {
     cursor: pointer;
     color: black;
 }
+
+@media (min-width: 500px) {
+    .card {
+        max-width: fit-content;
+    }
+}
