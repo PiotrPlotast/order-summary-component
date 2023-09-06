@@ -25,6 +25,48 @@ body {
 }
 
 .card__text {
+    color: hsl(224, 23%, 55%);
     max-width: 25ch;
+    margin: auto;
+}
+
+.chosen-plan {
+    display: grid;
+    grid-template-areas: "a b c";
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    img {
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    .chosen-plan__heading {
+        font-size: 0.95rem;
+        font-weight: 900;
+    }
+
+    .chosen-plan__text {
+        font-size: 0.95rem;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .chosen-plan__change-plan-btn {
+        font-size: 0.9rem;
+        font-weight: 700;
+        border: none;
+        background-color: hsl(225, 100%, 98%);
+        color: hsl(245, 75%, 52%);
+        text-decoration: underline;
+        margin-left: 2rem;
+    }
+}
+
+.card__payment-btn {
+    display: block;
     margin: auto;
 }
