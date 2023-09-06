@@ -9,7 +9,7 @@ body {
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #fff;
     max-width: 90%;
     margin: auto;
     text-align: center;
@@ -17,10 +17,14 @@ body {
     overflow: hidden;
 }
 
+.card-content {
+    padding: 1.5rem;
+}
+
 .card__heading {
     font-size: 1.5rem;
     font-weight: 900;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -35,7 +39,6 @@ body {
     grid-template-areas: "a b c";
     align-items: center;
     background-color: hsl(225, 100%, 98%);
-    width: 85%;
     margin: auto;
     border-radius: 10px;
     margin-top: 1.5rem;
@@ -63,10 +66,46 @@ body {
         color: hsl(245, 75%, 52%);
         text-decoration: underline;
         margin-left: 2rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .chosen-plan__change-plan-btn:is(:hover, :focus) {
+        text-decoration: none;
+        cursor: pointer;
     }
 }
 
 .card__payment-btn {
     display: block;
     margin: auto;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin-bottom: 1.5rem;
+    -webkit-box-shadow: 0px 30px 20px -22px rgba(40, 40, 226, 1);
+    -moz-box-shadow: 0px 30px 20px -22px rgba(40, 40, 226, 1);
+    box-shadow: 0px 30px 20px -22px rgba(40, 40, 226, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card__payment-btn:is(:hover, :focus) {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: translateY(-3px);
+}
+
+.card__cancel-order-btn {
+    font-weight: 900;
+    background-color: #fff;
+    color: hsl(224, 23%, 55%);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__cancel-order-btn:is(:focus, :hover) {
+    cursor: pointer;
+    color: black;
 }
