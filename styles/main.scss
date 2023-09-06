@@ -24,6 +24,7 @@ body {
 .card__heading {
     font-size: 1.5rem;
     font-weight: 900;
+    color: hsl(223, 47%, 23%);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -37,6 +38,7 @@ body {
 .chosen-plan {
     display: grid;
     grid-template-areas: "a b c";
+    grid-template-columns: 0.6fr 1fr 0.5fr;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
     margin: auto;
@@ -45,7 +47,11 @@ body {
     margin-bottom: 1.5rem;
 
     img {
-        margin: 1rem 0 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .chosen-plan__details {
+        justify-self: start;
     }
 
     .chosen-plan__heading {
@@ -65,7 +71,7 @@ body {
         background-color: hsl(225, 100%, 98%);
         color: hsl(245, 75%, 52%);
         text-decoration: underline;
-        margin-left: 2rem;
+        margin-right: 0.5rem;
         transition: all 0.3s ease-in-out;
     }
 
@@ -83,8 +89,8 @@ body {
     border: none;
     border-radius: 10px;
     width: 100%;
-    padding: 0.8rem 0;
-    margin-bottom: 1.5rem;
+    padding: 0.9rem 0;
+    margin-bottom: 1rem;
     -webkit-box-shadow: 0px 30px 20px -22px rgba(40, 40, 226, 1);
     -moz-box-shadow: 0px 30px 20px -22px rgba(40, 40, 226, 1);
     box-shadow: 0px 30px 20px -22px rgba(40, 40, 226, 1);
@@ -102,6 +108,7 @@ body {
     background-color: #fff;
     color: hsl(224, 23%, 55%);
     border: none;
+    margin: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -113,5 +120,21 @@ body {
 @media (min-width: 500px) {
     .card {
         max-width: fit-content;
+    }
+
+    .card-content {
+        padding: 2.5rem;
+    }
+
+    .card__heading {
+        font-size: 1.8rem;
+    }
+
+    .card__text {
+        max-width: 30ch;
+    }
+
+    .chosen-plan {
+        grid-template-columns: 0.45fr 1fr 0.5fr;
     }
 }
